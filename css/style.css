@@ -1,0 +1,24 @@
+:root{
+  --bg:#f6f8fa;
+  --card:#ffffff;
+  --accent:#0b5fff;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;padding:24px;background:var(--bg);color:#111}
+.container{max-width:720px;margin:0 auto}
+h1{margin:0 0 12px}
+form{display:flex;flex-direction:column;gap:8px}
+label{display:flex;flex-direction:column;font-size:14px;color:var(--muted)}
+input[type=email],input[type=password],input[type=text],#new-task-title{padding:10px;border:1px solid #ddd;border-radius:6px}
+button{background:var(--accent);color:#fff;border:none;padding:10px 12px;border-radius:6px;cursor:pointer}
+button:hover{opacity:0.95}
+.hidden{display:none}
+.app-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.tasks ul, #tasks-list{list-style:none;padding:0;margin:0}
+#tasks-list li{background:var(--card);padding:10px;border-radius:8px;margin-bottom:8px;display:flex;align-items:center;gap:8px;border:1px solid #eee}
+.task-title{flex:1}
+.task-title.completed{text-decoration:line-through;color:var(--muted)}
+.small-btn{background:#eee;color:#111;padding:6px 8px;border-radius:6px;border:none;cursor:pointer}
+.small-btn.danger{background:#ff5c5c;color:#fff}
+.auth-note{font-size:13px;color:var(--muted);}
